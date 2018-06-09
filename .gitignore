@@ -1,0 +1,11 @@
+.idea
+node_modules
+.DS_Store
+dist/
+build/
+bundle.js
+geth.log
+.env.*
+.env
+zos.development.json
+zos.local.json
