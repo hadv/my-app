@@ -1,0 +1,44 @@
+{
+  "contracts": {
+    "MyContract": {
+      "address": "0xe9dd897cb3e9589b34aa638ff23fd806d71f0f70",
+      "bytecodeHash": "b3136e8ccfdacc80fe8b18a39028a0f65ea1c91f908291c1fc05216a06479791"
+    },
+    "YourContract": {
+      "address": "0xaa3791697ca5b207e7cba13b1521b143cfe15057",
+      "bytecodeHash": "7f0ae7c612e7f8d4a84543ca77880c2ef3449cad84d34c2094bbe3a792a96a3d"
+    }
+  },
+  "proxies": {
+    "YourContract": [
+      {
+        "address": "0x009cfdc5794505320c4713e056b7c7867037234b",
+        "version": "0.1.0",
+        "implementation": "0xaa3791697ca5b207e7cba13b1521b143cfe15057"
+      }
+    ],
+    "MintableERC721Token": [
+      {
+        "address": "0x6d7b4b1f2af1a68d6358dc225d51849721cd56e3",
+        "version": "0.1.0",
+        "implementation": "0x0c4dc87b94f9bbbdcaa3485fb2de8b86bc7eec27"
+      }
+    ]
+  },
+  "stdlib": {
+    "address": "0xd8e8966a39c2e8a1beee3c00a1b37e01f3caac83",
+    "customDeploy": true,
+    "name": "openzeppelin-zos",
+    "version": "1.9.1"
+  },
+  "app": {
+    "address": "0x356b5a00f435adeca5b2c2d1977abe151e4c2cb2"
+  },
+  "version": "0.1.0",
+  "package": {
+    "address": "0x3217e6f8551479276bf08d018fe560730f71d103"
+  },
+  "provider": {
+    "address": "0x70c97196cbefe23894b39715cc2389b65d4d578c"
+  }
+}

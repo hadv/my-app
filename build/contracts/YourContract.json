@@ -1,0 +1,690 @@
+{
+  "contractName": "YourContract",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "token",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "setToken",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506101bb806100206000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063144fa6d714610051578063fc0c546a14610094575b600080fd5b34801561005d57600080fd5b50610092600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100eb565b005b3480156100a057600080fd5b506100a961016a565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561012757600080fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058200f74ac513cca9f343b887dc6a6b15c7429f404ac68be9d072a65ae14379f80370029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063144fa6d714610051578063fc0c546a14610094575b600080fd5b34801561005d57600080fd5b50610092600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100eb565b005b3480156100a057600080fd5b506100a961016a565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561012757600080fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058200f74ac513cca9f343b887dc6a6b15c7429f404ac68be9d072a65ae14379f80370029",
+  "sourceMap": "101:182:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;101:182:1;;;;;;;",
+  "deployedSourceMap": "101:182:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;166:115;;8:9:-1;5:2;;;30:1;27;20:12;5:2;166:115:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;127:32;;8:9:-1;5:2;;;30:1;27;20:12;5:2;127:32:1;;;;;;;;;;;;;;;;;;;;;;;;;;;166:115;253:1;235:20;;:6;:20;;;;227:29;;;;;;;;270:6;262:5;;:14;;;;;;;;;;;;;;;;;;166:115;:::o;127:32::-;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.24;\n\nimport \"openzeppelin-zos/contracts/token/ERC721/MintableERC721Token.sol\";\n\ncontract YourContract {\n  MintableERC721Token public token;\n  \n  function setToken(MintableERC721Token _token) external {\n    require(_token != address(0));\n    token = _token;\n  }\n}\n",
+  "sourcePath": "/Users/hadv/work/github/hadv/my-app/contracts/YourContract.sol",
+  "ast": {
+    "absolutePath": "/Users/hadv/work/github/hadv/my-app/contracts/YourContract.sol",
+    "exportedSymbols": {
+      "YourContract": [
+        61
+      ]
+    },
+    "id": 62,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 39,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "absolutePath": "openzeppelin-zos/contracts/token/ERC721/MintableERC721Token.sol",
+        "file": "openzeppelin-zos/contracts/token/ERC721/MintableERC721Token.sol",
+        "id": 40,
+        "nodeType": "ImportDirective",
+        "scope": 62,
+        "sourceUnit": 1430,
+        "src": "26:73:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 61,
+        "linearizedBaseContracts": [
+          61
+        ],
+        "name": "YourContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 42,
+            "name": "token",
+            "nodeType": "VariableDeclaration",
+            "scope": 61,
+            "src": "127:32:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+              "typeString": "contract MintableERC721Token"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 41,
+              "name": "MintableERC721Token",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1429,
+              "src": "127:19:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+                "typeString": "contract MintableERC721Token"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 59,
+              "nodeType": "Block",
+              "src": "221:60:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 52,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 48,
+                          "name": "_token",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 44,
+                          "src": "235:6:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+                            "typeString": "contract MintableERC721Token"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "!=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "30",
+                              "id": 50,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "number",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "253:1:1",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              },
+                              "value": "0"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              }
+                            ],
+                            "id": 49,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "245:7:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": "address"
+                          },
+                          "id": 51,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "245:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "235:20:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 47,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        1543,
+                        1544
+                      ],
+                      "referencedDeclaration": 1543,
+                      "src": "227:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 53,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "227:29:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 54,
+                  "nodeType": "ExpressionStatement",
+                  "src": "227:29:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 57,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 55,
+                      "name": "token",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 42,
+                      "src": "262:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+                        "typeString": "contract MintableERC721Token"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 56,
+                      "name": "_token",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44,
+                      "src": "270:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+                        "typeString": "contract MintableERC721Token"
+                      }
+                    },
+                    "src": "262:14:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+                      "typeString": "contract MintableERC721Token"
+                    }
+                  },
+                  "id": 58,
+                  "nodeType": "ExpressionStatement",
+                  "src": "262:14:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 60,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "setToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 45,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60,
+                  "src": "184:26:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+                    "typeString": "contract MintableERC721Token"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 43,
+                    "name": "MintableERC721Token",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1429,
+                    "src": "184:19:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+                      "typeString": "contract MintableERC721Token"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "183:28:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 46,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "221:0:1"
+            },
+            "scope": 61,
+            "src": "166:115:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 62,
+        "src": "101:182:1"
+      }
+    ],
+    "src": "0:284:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/hadv/work/github/hadv/my-app/contracts/YourContract.sol",
+    "exportedSymbols": {
+      "YourContract": [
+        61
+      ]
+    },
+    "id": 62,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 39,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "absolutePath": "openzeppelin-zos/contracts/token/ERC721/MintableERC721Token.sol",
+        "file": "openzeppelin-zos/contracts/token/ERC721/MintableERC721Token.sol",
+        "id": 40,
+        "nodeType": "ImportDirective",
+        "scope": 62,
+        "sourceUnit": 1430,
+        "src": "26:73:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 61,
+        "linearizedBaseContracts": [
+          61
+        ],
+        "name": "YourContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 42,
+            "name": "token",
+            "nodeType": "VariableDeclaration",
+            "scope": 61,
+            "src": "127:32:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+              "typeString": "contract MintableERC721Token"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 41,
+              "name": "MintableERC721Token",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1429,
+              "src": "127:19:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+                "typeString": "contract MintableERC721Token"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 59,
+              "nodeType": "Block",
+              "src": "221:60:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 52,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 48,
+                          "name": "_token",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 44,
+                          "src": "235:6:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+                            "typeString": "contract MintableERC721Token"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "!=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "30",
+                              "id": 50,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "number",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "253:1:1",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              },
+                              "value": "0"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              }
+                            ],
+                            "id": 49,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "245:7:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": "address"
+                          },
+                          "id": 51,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "245:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "235:20:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 47,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        1543,
+                        1544
+                      ],
+                      "referencedDeclaration": 1543,
+                      "src": "227:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 53,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "227:29:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 54,
+                  "nodeType": "ExpressionStatement",
+                  "src": "227:29:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 57,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 55,
+                      "name": "token",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 42,
+                      "src": "262:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+                        "typeString": "contract MintableERC721Token"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 56,
+                      "name": "_token",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44,
+                      "src": "270:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+                        "typeString": "contract MintableERC721Token"
+                      }
+                    },
+                    "src": "262:14:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+                      "typeString": "contract MintableERC721Token"
+                    }
+                  },
+                  "id": 58,
+                  "nodeType": "ExpressionStatement",
+                  "src": "262:14:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 60,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "setToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 45,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60,
+                  "src": "184:26:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+                    "typeString": "contract MintableERC721Token"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 43,
+                    "name": "MintableERC721Token",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1429,
+                    "src": "184:19:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_MintableERC721Token_$1429",
+                      "typeString": "contract MintableERC721Token"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "183:28:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 46,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "221:0:1"
+            },
+            "scope": 61,
+            "src": "166:115:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 62,
+        "src": "101:182:1"
+      }
+    ],
+    "src": "0:284:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-06-09T04:12:03.011Z"
+}

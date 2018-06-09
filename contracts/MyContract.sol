@@ -10,6 +10,10 @@ contract MyContract is Migratable {
   }
 
   function increment() public {
-    x += 1;  
+    x += 1;
+  }
+
+  function decrement() public {
+    x -= 1;
   }  
 }

@@ -2,6 +2,11 @@
   "name": "my-app",
   "version": "0.1.0",
   "contracts": {
-    "MyContract": "MyContract"
+    "MyContract": "MyContract",
+    "YourContract": "YourContract"
+  },
+  "stdlib": {
+    "name": "openzeppelin-zos",
+    "version": "1.9.1"
   }
 }
